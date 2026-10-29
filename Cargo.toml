@@ -1,0 +1,13 @@
+[package]
+name = "mapfmt"
+description = "Reindent MapServer Mapfiles"
+version = "0.1.0"
+authors = ["Linus Wæhler <17277861+lnus@users.noreply.github.com>"]
+license = "MIT"
+repository = "https://github.com/lnus/mapfmt"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+tree-sitter = "0.26"
+tree-sitter-mapfile = { git = "https://github.com/lnus/tree-sitter-mapfile", tag = "v0.3.0" }
